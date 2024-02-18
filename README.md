@@ -1,16 +1,19 @@
-# internshala_task
+# Internshala_task
 
-A new Flutter project.
+This app was created as a task for the flutter developer intern position at Internshala. The app demonstrates the use of API calling and JSON parsing in Flutter.
+- Runs on Android SDK 21+
+- Uses Clean Architecture.
+  
+## Features
+- The app starts with the default splash screen provided by Flutter.
+- The app consumes data recieved from the API provided. (https://internshala.com/flutter_hiring/search)
+- The app parses the JSON response received and displays the results as cards on the default page.
+- The cards can be expanded to see the details on a new details page.
+- The default page also has a filter functionality to refine the results received.
 
-## Getting Started
+### Limitations
+- Basic UI
+- Limited filter options for demonstration purposes.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Demonstration
+https://www.youtube.com/shorts/9A5xC_uV8_w
