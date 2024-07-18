@@ -16,4 +16,4 @@ This app was created as a task for the flutter developer intern position at Inte
 - Limited filter options for demonstration purposes.
 
 ### Demonstration
-https://www.youtube.com/shorts/9A5xC_uV8_w
+https://youtube.com/shorts/fCUADa-r9fE?feature=share

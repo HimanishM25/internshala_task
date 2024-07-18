@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import '../domain/internship.dart';
 import 'details_page.dart';
 
@@ -10,12 +11,31 @@ class InternshipCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      elevation: 4,
+      elevation: 1,
       margin: EdgeInsets.symmetric(vertical: 8),
       child: ListTile(
-        title: Text(
-          internship.title,
-          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+        title: Row(
+          children: [
+            ConstrainedBox(
+              constraints: BoxConstraints(
+                maxWidth: MediaQuery.of(context).size.width * 0.6,
+              ),
+              child: Text(
+                internship.title,
+                style: GoogleFonts.inter(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold),
+              ),
+            ),
+            Spacer(),
+            Text(
+              internship.duration,
+              style: GoogleFonts.interTight(
+                  fontSize: 14,
+                  fontWeight: FontWeight.w500
+              ),
+            ),
+          ],
         ),
         subtitle: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -23,17 +43,20 @@ class InternshipCard extends StatelessWidget {
             SizedBox(height: 4),
             Text(
               internship.companyName,
-              style: TextStyle(fontSize: 16),
+              style: GoogleFonts.interTight(
+                  fontSize: 14,
+                fontWeight: FontWeight.w500
+              ),
             ),
             SizedBox(height: 4),
             Text(
               'Stipend: ${internship.stipend}',
-              style: TextStyle(fontSize: 14),
+              style: GoogleFonts.interTight(fontSize: 12),
             ),
             SizedBox(height: 4),
             Text(
               'Location: ${internship.location}',
-              style: TextStyle(fontSize: 14),
+              style: GoogleFonts.interTight(fontSize: 12),
             ),
             SizedBox(height: 8),
           ],
